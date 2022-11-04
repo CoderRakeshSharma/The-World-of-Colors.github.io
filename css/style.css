@@ -447,6 +447,8 @@ p{
 .fun-facts-img{
     display: flex;
     justify-content: center;
+    align-items:center;
+    padding: 0 15px;
 }
 .fun-facts-img img{
     max-width: 420px;
@@ -714,5 +716,57 @@ p{
     }
     .home-img{
         margin-top:60px;
+    }
+    .course-item,
+    .why-us-item{
+        width:calc(50%-30%)
+    }
+    .footer-item{
+        width: 50%;
+    }
+    .footer-item{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px){
+    .contact-img, .contact-form,
+    .fun-facts-img, .fun-facts-items,
+    .home-text, .home-img{
+        width:100%;
+    }
+    .contact-form,
+    .fun-facts-items{
+        margin-top: 50px;
+    }
+    .home-text h1{
+        font-size:35px;
+    }
+    .home-text h1 span::after{
+        bottom: 6px;
+    }
+    .home-text h2{
+        font-size:18px;
+    }
+    .section-title h2{
+        font-size: 30px;
+    }
+    .sec-padding{
+        padding: 70px 0;
+    }
+}
+
+@media(max-width:575px){
+    .fun-facts-item,
+    .course-item,
+    .why-us-item{
+        width:calc(100%-30%)
+    }
+    .footer-item,
+    .review-item{
+        width: 100%;
+    }
+    .review-item{
+        text-align: center;
     }
 }
